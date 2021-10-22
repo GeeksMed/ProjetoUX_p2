@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block title %}
+Entrega Freelancer
+{% endblock %}
+    <h1>Entrega</br>Freelancer</br></h1>
+    <form action="/login/" method="POST" class="loginPost">
+        <label>Usuario</label>
+        <textarea name="textarea" placeholder="Nome">
+        <label>Senha</label><br>
+        <input type="password" name="password">
+        <button type="submit" class="btnSubmitForm" onClick="{{url_for('get_nome')}}";>Login</button>
+    </form>
+{% block content %}
+{% endblock %}
