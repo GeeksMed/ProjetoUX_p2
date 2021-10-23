@@ -1,0 +1,97 @@
+@media screen and (max-width: 360px) {
+    body{
+        margin: 0;
+        background-color: #000042;
+        display: grid;
+        grid-template-columns: 60vh;
+        grid-template-rows: 20vh;
+        grid-template-areas: "logo" "conteudo" "footer";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+
+    body div.logo{
+        grid-area: "logo";
+    }
+
+    body div.logo img{
+        width: 17vh;
+    }
+
+    body div.caixa{
+        grid-area: "conteudo";
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 3vh;
+        width: 50vh;
+        height: 58vh;
+    }
+
+    body h1 {
+        font-size: 5vh;
+        text-align: center;
+        color: #000042;
+        text-shadow: 0px 3px 5px #000;
+        font-family: sans-serif;
+    }
+
+    body form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    body a#esqueceu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 0 1vh 0;
+    }
+
+    body div.gmail_acesso{
+        grid-area: "footer";
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 3vh 3vh 0 0;
+        width: 56vh;
+        height: -webkit-fill-available
+    }
+
+    body input{
+        width: 100%;
+        padding: 2vh 3vh;
+        margin: 1.5vh 0;
+        display: inline-block;
+        border: 0.2vh solid #ccc;
+        border-radius: 4vh;
+        box-sizing: border-box;
+        background-color: #000042;
+        color: #fff;
+    }
+
+    body button.btnSubmitForm{
+        padding: 1vh 3vh;
+        margin: 1.5vh 0;
+        display: inline-block;
+        border: 0.2vh solid #ccc;
+        border-radius: 4vh;
+        box-sizing: border-box;
+        background-color: #000042;
+        color: #fff;
+        font-size: 3.5vh;
+    }
+
+    body p{
+        margin: 1vh;
+    }
+}

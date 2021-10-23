@@ -2,13 +2,21 @@
 {% block title %}
 Entrega Freelancer
 {% endblock %}
-    <h1>Entrega</br>Freelancer</br></h1>
-    <form action="/login/" method="POST" class="loginPost">
-        <label>Usuario</label>
-        <textarea name="textarea" placeholder="Nome">
-        <label>Senha</label><br>
-        <input type="password" name="password">
-        <button type="submit" class="btnSubmitForm" onClick="{{url_for('get_nome')}}";>Login</button>
-    </form>
 {% block content %}
+    <div class="logo">
+        <img src="{{url_for('static', filename='/img/logo_unico_branco.png')}}" alt="Logo">
+    </div>
+    <div class="caixa">
+        <h1>Entrega</br>Freelancer</br></h1>
+        <form action="/login/" method="POST" class="loginPost">
+            <input type="text" id="nome" name="nome" placeholder="Usuário">
+            <input type="password" id="senha" name="password" placeholder="Senha">
+            <a id="esqueceu" href="{{ url_for('esqueceu')}}">Esqueceu a senha?</a>
+            <button type="submit" class="btnSubmitForm" onClick="{{url_for('get_nome')}}";>LOGIN</button>
+            <p>Não tem uma conta? <a id="nova_conta" href="{{ url_for('nova_conta')}}">CRIAR CONTA</a></p>
+        </form>
+    </div>
+    <div class="gmail_acesso">
+        <p>teste</p>
+    </div>
 {% endblock %}
