@@ -8,7 +8,7 @@ Entrega Freelancer
     </div>
     <div class="caixaLogin">
         <h1>Entrega</br>Freelancer</br></h1>
-        <form action="/login/" method="POST" class="loginPost">
+        <form action="/login" method="POST" class="loginPost">
             <input type="text" id="nome" name="nome" placeholder="Usuário">
             <input type="password" id="senha" name="password" placeholder="Senha">
             <a id="esqueceu" href="{{ url_for('esqueceu')}}">Esqueceu a senha?</a>
@@ -16,7 +16,7 @@ Entrega Freelancer
             <p>Não tem uma conta? <a id="nova_conta" href="{{ url_for('nova_conta')}}">CRIAR CONTA</a></p>
         </form>
     </div>
-    <form action="/login/" method="POST" class="gmail_acesso">
+    <form action="/login" method="POST" class="gmail_acesso">
         <p>Faça login com seu email da Google</p>
         <a id="gmail_button" href="{{url_for('get_nome')}}">
             <img src="{{url_for('static', filename='/img/gmail.png')}}" alt="Gmail">

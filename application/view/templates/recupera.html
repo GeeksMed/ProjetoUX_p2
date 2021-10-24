@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block title %}
+Entrega Freelancer
+{% endblock %}
+{% block content %}
+    <div class="logo">
+        <img src="{{url_for('static', filename='/img/logo_unico_branco.png')}}" alt="Logo">
+    </div>
+    <div class="caixaRecuperarVolta">
+        <h1>Entrega</br>Freelancer</br></h1>
+        <div class="recuperarVoltaPost">
+            <h4>
+                Recuperar sua senha
+            </h4>
+            <p id="mensagemConfEmail">
+                Favor vizualizar o email recebido com o linkl de redefinição de senha.
+            </p>
+            <a id="back_button" href="{{url_for('index')}}">Voltar a Tela de Login</a>
+        </div>
+    </div>
+{% endblock %}

@@ -57,6 +57,56 @@
         height: 58vh;
     }
 
+    body div.caixaRecuperar form.recuperarPost{
+        font-family: system-ui;
+        width: 45vh;
+    }
+
+    body div.caixaRecuperar form.recuperarPost h4{
+        margin: 2vh 0;
+        font-weight: 900;
+        font-size: large;
+    }
+
+    body div.caixaRecuperar form.recuperarPost p{
+        margin: 1vh 0;
+    }
+
+    body div.caixaRecuperar form.recuperarPost p#mensagemConfEmail{
+        margin: 3vh 0;
+    }
+
+    body div.caixaRecuperarVolta{
+        grid-area: "conteudo";
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 3vh;
+        width: 50vh;
+        height: 47vh;
+    }
+
+    body div.caixaRecuperarVolta div.recuperarVoltaPost{
+        font-family: system-ui;
+        width: 45vh;
+    }
+
+    body div.caixaRecuperarVolta div.recuperarVoltaPost h4{
+        margin: 2vh 0;
+        font-weight: 900;
+        font-size: large;
+    }
+
+    body div.caixaRecuperarVolta div.recuperarVoltaPost p{
+        margin: 1vh 0;
+    }
+
+    body div.caixaRecuperarVolta div.recuperarVoltaPost p#mensagemConfEmail{
+        margin: 3vh 0;
+    }
+
     body div.caixaNova label{
         font-family: system-ui;
         font-weight: 700;
@@ -149,7 +199,7 @@
         font-size: 3.5vh;
     }
 
-    body div.caixaNova button.btnSubmitForm{
+    body div.caixaNova button.btnSubmitForm, body div.caixaRecuperar button.btnSubmitForm{
         padding: 1vh 3vh;
         margin: 2.5vh 0;
         display: inline-block;
@@ -161,9 +211,9 @@
         font-size: 3.5vh;
     }
 
-    body div.caixaRecuperar button.btnSubmitForm{
+    body div.caixaRecuperarVolta a#back_button{
         padding: 1vh 3vh;
-        margin: 2.5vh 0;
+        margin: 5vh 0;
         display: inline-block;
         border: 0.2vh solid #ccc;
         border-radius: 4vh;
@@ -171,6 +221,9 @@
         background-color: #000042;
         color: #fff;
         font-size: 3.5vh;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
     }
 
     body p{
