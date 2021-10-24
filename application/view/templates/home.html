@@ -1,0 +1,29 @@
+{% extends 'index.html'%}
+{% block title %}
+Entrega Freelancer
+{% endblock %}
+{% block content %}
+    <div class="home_base">
+        <div class="anuncio">
+            <img src="{{url_for('static', filename='/img/anuncio.png')}}" alt="Logo">
+        </div>
+        <div class="entregadores">
+            <div class="entregadores_titulo">
+                <h2>Contrate<br>Entregadores</h2>
+                <a href="">Ver mais</a>
+            </div>
+            <div class="entregadores_anuncios">
+
+            </div>
+        </div>
+        <div class="empresas">
+            <div class="empresas_titulo">
+                <h2>Empresas<br>Contratantes</h2>
+                <a href="">Ver mais</a>
+            </div>
+            <div class="empresas_anuncios">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

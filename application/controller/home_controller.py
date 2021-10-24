@@ -31,10 +31,10 @@ def get_nome():
     print("nomeLogin = ", nomeLogin)
     if nomeLogin == None or nomeLogin == "":
         nomeLogin = "Welcome Tester"
-    return render_template("index.html", nome=nomeLogin)
+    return render_template("home.html", nome=nomeLogin)
 
 
 @app.route("/login")
 def login_gmail():
     nomeLogin = "Login Gmail"
-    return render_template("index.html", nome=nomeLogin)
+    return render_template("home.html", nome=nomeLogin)

@@ -8,8 +8,29 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-    <div id="menu">
-
+    <div class="menu">
+        <div id="sub_menu_user">
+            <a href="">
+                <img src="{{url_for('static', filename='/img/logo_unico_branco.png')}}" alt="Home">
+            </a>
+            <h1>Entrega Freelancer</h1>
+            <a href="">
+                <img src="{{url_for('static', filename='/img/person.png')}}" alt="Home">
+            </a>
+        </div>
+        <hr>
+        <div id="sub_menu_busca">
+            <a href="">
+                <img src="{{url_for('static', filename='/img/place.png')}}" alt="Home">
+            </a>
+            <div>
+                <img src="{{url_for('static', filename='/img/search.png')}}" alt="Home">
+                <input type="text" id="busca" name="busca" placeholder="Buscar">
+            </div>
+            <a href="">
+                <img src="{{url_for('static', filename='/img/shop_cart.png')}}" alt="Home">
+            </a>
+        </div>
     </div>
     {% block content %}
 

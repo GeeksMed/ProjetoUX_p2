@@ -4,8 +4,8 @@
         background-color: #000042;
         display: grid;
         grid-template-columns: 60vh;
-        grid-template-rows: 20vh;
-        grid-template-areas: "logo" "conteudo" "footer";
+        /* grid-template-rows: 20vh; */
+        grid-template-areas: "header" "conteudo" "footer";
         justify-content: center;
         align-items: center;
         justify-items: center;
@@ -14,7 +14,10 @@
     }
 
     body div.logo{
-        grid-area: "logo";
+        grid-area: "header";
+        width: 56vh;
+        display: flex;
+        justify-content: center;
     }
 
     body div.logo img{
@@ -271,4 +274,123 @@
     body form.gmail_acesso img{
         width: 7.6vh;
     }
+
+    body div.menu{
+        display: flex;
+        flex-direction: column;
+        width: 56vh;
+    }
+
+    body div.menu img{
+        width:4vh;
+    }
+
+    body div.menu{
+        grid-area: "header";
+        width: 56vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+        margin: 1vh 0 0 0;
+    }
+
+    body div.menu div#sub_menu_user{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 1vh;
+    }
+
+    body div.menu div#sub_menu_user h1{
+        margin:0;
+        font-size: 3vh;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 3px #fff;
+        font-family: system-ui;
+    }
+
+    body div.menu hr{
+        width: 55vh;
+        margin: .3vh;
+    }
+
+    body div.menu div#sub_menu_busca{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 1vh .5vh 0;
+        align-items: center;
+    }
+
+    body div.menu div#sub_menu_busca div{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0 0.5vh;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    body div.menu div#sub_menu_busca div input{
+        border: none;
+        background-color: #fff;
+        resize: none;
+        outline: none;
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        height: 3.5vh;
+    }
+
+    body div.menu div#sub_menu_busca div input::-webkit-input-placeholder{
+        color: #000;
+        opacity: .5;
+        font-family: system-ui;
+        font-weight: 700;
+    }
+
+    body div.home_base{
+        grid-area: "conteudo";
+        background-color: #e2e2e2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 56vh;
+        height: 100vh;
+    }
+
+    body div.anuncio img{
+        width: 56vh;
+    }
+
+    body div.entregadores, body div.empresas{
+        margin: 0;
+    }
+
+    body div.entregadores div.entregadores_titulo, body div.empresas div.empresas_titulo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 52vh;
+    }
+
+    body div.entregadores div.entregadores_titulo h2, body div.empresas div.empresas_titulo h2{
+        margin:0;
+        font-size: 4vh;
+        text-align: justify;
+        color: #858585;
+        font-family: system-ui;
+    }
+
+    body div.entregadores div.entregadores_titulo a, body div.empresas div.empresas_titulo a{
+        margin:0;
+        font-size: 3vh;
+        text-align: justify;
+        color: #000042;
+        font-family: system-ui;
+        text-decoration: none;
+    }
+
 }
