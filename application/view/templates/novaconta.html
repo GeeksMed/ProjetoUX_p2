@@ -3,5 +3,23 @@
 Entrega Freelancer
 {% endblock %}
 {% block content %}
-
+    <div class="logo">
+        <img src="{{url_for('static', filename='/img/logo_unico_branco.png')}}" alt="Logo">
+    </div>
+    <div class="caixaNova">
+        <h1>Entrega</br>Freelancer</br></h1>
+        <form action="/login/" method="POST" class="cadastroPost">
+            <label class="novo_cadastro">Usuário</label>
+            <input type="text" id="nome" name="nome" placeholder="Usuário">
+            <label class="novo_cadastro">CPF/CNPJ</label>
+            <input type="password" id="cadastro_nacional" name="password" placeholder="Senha">
+            <label class="novo_cadastro">E-mail</label>
+            <input type="password" id="email" name="password" placeholder="Senha">
+            <label class="novo_cadastro">Senha</label>
+            <input type="password" id="senha" name="password" placeholder="Senha">
+            <label class="novo_cadastro">Confirmar Senha</label>
+            <input type="password" id="conf_senha" name="password" placeholder="Senha">
+            <button type="submit" class="btnSubmitForm" onClick="{{url_for('get_nome')}}";>LOGIN</button>
+        </form>
+    </div>
 {% endblock %}

@@ -10,7 +10,15 @@ def index():
 @app.route("/login/", methods=['POST'])
 def get_nome():
     nomeLogin = request.form.get('textarea')
-    return render_template("home.html", nome = nomeLogin)
+    if nomeLogin == None:
+        nomeLogin = "Welcome Tester"
+    return render_template("index.html", nome = nomeLogin)
+
+
+@app.route("/login/")
+def login_gmail():
+    nomeLogin = "Login Gmail"
+    return render_template("index.html", nome=nomeLogin)
 
 
 @app.route("/lostpassword/") #, methods=["POST"])

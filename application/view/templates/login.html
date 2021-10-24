@@ -6,7 +6,7 @@ Entrega Freelancer
     <div class="logo">
         <img src="{{url_for('static', filename='/img/logo_unico_branco.png')}}" alt="Logo">
     </div>
-    <div class="caixa">
+    <div class="caixaLogin">
         <h1>Entrega</br>Freelancer</br></h1>
         <form action="/login/" method="POST" class="loginPost">
             <input type="text" id="nome" name="nome" placeholder="Usuário">
@@ -16,7 +16,11 @@ Entrega Freelancer
             <p>Não tem uma conta? <a id="nova_conta" href="{{ url_for('nova_conta')}}">CRIAR CONTA</a></p>
         </form>
     </div>
-    <div class="gmail_acesso">
-        <p>teste</p>
-    </div>
+    <form action="/login/" method="POST" class="gmail_acesso">
+        <p>Faça login com seu email da Google</p>
+        <a id="gmail_button" href="{{url_for('get_nome')}}">
+            <img src="{{url_for('static', filename='/img/gmail.png')}}" alt="Gmail">
+            <p>Acessar com GMAIL</p>
+        </a>
+    </form>
 {% endblock %}
