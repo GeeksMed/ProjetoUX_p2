@@ -1,0 +1,22 @@
+{% for anuncio in anuncio_lista %}
+    <section class="anuncio" id="anuncio-{{ anuncio.cpf_cnpj }}">
+        <header>
+            <div>
+                <img src="{{url_for('static', filename='/img/anuncio.imagem')}}">
+            </div>
+        </header>
+        <article>
+            <div class="nome_anuncio">
+                <h2>{{ anuncio.titulo }}</h2>
+            </div>
+
+            <div class="descr_anuncio">
+                {{ anuncio.descr_breve }}
+            </div>
+
+            <div class="end_anuncio">
+                {{ anuncio.endereco }}, {{ anuncio.uf }}
+            </div>
+        </article>
+    </section>
+{% endfor %}

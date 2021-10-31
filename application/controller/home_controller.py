@@ -1,5 +1,33 @@
 from application import app
 from flask import Flask, render_template, request, url_for
+from application.model.entity.entregador import Entregador
+from application.model.dao.entregador_dao import EntregadorDAO
+from application.model.entity.empresa import Empresa
+from application.model.dao.empresa_dao import EmpresaDAO
+
+entregador_list = EntregadorDAO(
+    [Entregador("12345678900",
+               "Carlos Eduardo Ferreira",
+               imagem,
+               "Utiliza bicicleta",
+               "Rio de Janeiro",
+               "12345678",
+               "RJ",
+               "Sou eu, Carlos",
+               50.00,
+               6
+    ),
+    Entregador("00000000000",
+               "José Ferreira Eduardo",
+               imagem,
+               "Utiliza moto",
+               "Nova Iguaçu",
+               "12345000",
+               "RJ",
+               "Sou eu, José",
+               70.00,
+               3
+    )])
 
 
 @app.route('/')
