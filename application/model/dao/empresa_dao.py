@@ -6,5 +6,5 @@ class EmpresaDAO:
     def __init__(self, empresa_list: list):
         self.__empresa_list = empresa_list
 
-    def retornar_emnpresas(self):
+    def retornar_empresas(self):
         return self.__empresa_list

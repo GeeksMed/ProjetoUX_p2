@@ -70,7 +70,7 @@ class Pessoa():
 
     @property
     def endereco(self):
-        return self.__descr_breve
+        return self.__endereco
 
     @endereco.setter
     def endereco(self, endereco):

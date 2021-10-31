@@ -2,28 +2,45 @@
 {% block title %}
 Entrega Freelancer
 {% endblock %}
-{% block content %}
-    <div class="home_base">
-        <div class="anuncio">
-            <img src="{{url_for('static', filename='/img/anuncio.png')}}" alt="Logo">
+{% block content_index %}
+    <div class="anuncio">
+        <img src="{{url_for('static', filename='/img/anuncio.png')}}" alt="Logo">
+    </div>
+    <div class="entregadores">
+        <div class="entregadores_titulo">
+            <h2>Contrate<br>Entregadores</h2>
+            <a href="">Ver mais</a>
         </div>
-        <div class="entregadores">
-            <div class="entregadores_titulo">
-                <h2>Contrate<br>Entregadores</h2>
-                <a href="">Ver mais</a>
-            </div>
-            <div class="entregadores_anuncios">
+        <div class="entregadores_anuncios" id="anuncios_entregadores">
 
-            </div>
-        </div>
-        <div class="empresas">
-            <div class="empresas_titulo">
-                <h2>Empresas<br>Contratantes</h2>
-                <a href="">Ver mais</a>
-            </div>
-            <div class="empresas_anuncios">
-
-            </div>
         </div>
     </div>
+    <div class="empresas">
+        <div class="empresas_titulo">
+            <h2>Empresas<br>Contratantes</h2>
+            <a href="">Ver mais</a>
+        </div>
+        <div class="empresas_anuncios" id="anuncios_empresas">
+
+        </div>
+    </div>
+{% endblock %}
+{% block script %}
+    xhr_entregadores = new XMLHttpRequest();
+    xhr_entregadores.open("GET", "/list_entregadores");
+    xhr_entregadores.send(null);
+    xhr_entregadores.onreadystatechange = function () {
+        if (xhr_entregadores.readyState === 4 && xhr_entregadores.status === 200) {
+            document.getElementById("anuncios_entregadores").innerHTML = xhr_entregadores.response;
+        }
+    }
+
+    xhr_empresas = new XMLHttpRequest();
+    xhr_empresas.open("GET", "/list_empresas");
+    xhr_empresas.send(null);
+    xhr_empresas.onreadystatechange = function () {
+        if (xhr_empresas.readyState === 4 && xhr_empresas.status === 200) {
+            document.getElementById("anuncios_empresas").innerHTML = xhr_empresas.response;
+        }
+    }
 {% endblock %}

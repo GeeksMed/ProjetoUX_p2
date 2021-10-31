@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>{%block title%} {%endblock%}</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
-</head>
-<body>
+{% extends 'base.html'%}
+{% block title %}
+Entrega Freelancer
+{% endblock %}
+{% block content %}
+<body class="sistema_logado">
     <div class="menu">
         <div id="sub_menu_user">
             <a href="">
@@ -23,17 +19,37 @@
             <a href="">
                 <img src="{{url_for('static', filename='/img/place.png')}}" alt="Home">
             </a>
-            <div>
+            <form id="busca_form" action="{{ url_for('busca') }}" method="get" enctype="application/x-www-form-urlencoded"
+          onsubmit="return buscar()">
                 <img src="{{url_for('static', filename='/img/search.png')}}" alt="Home">
                 <input type="text" id="busca" name="busca" placeholder="Buscar">
-            </div>
+            </form>
             <a href="">
                 <img src="{{url_for('static', filename='/img/shop_cart.png')}}" alt="Home">
             </a>
         </div>
     </div>
-    {% block content %}
+    <div class="home_base", id="start_home">
+        {% block content_index %}
 
-	{% endblock %}
+        {% endblock %}
+    </div>
 </body>
-</html>
+<script>
+    {% block script %}
+    {% endblock %}
+
+    function buscar() {
+        palavraChave = document.getElementById("busca").value;
+        xhr = new XMLHttpRequest();
+        xhr.open("GET", "/busca?busca=" + palavraChave);
+        xhr.send(null);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById("start_home").innerHTML = xhr.response;
+            }
+        }
+        return false;
+    }
+</script>
+{% endblock %}

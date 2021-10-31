@@ -1,5 +1,5 @@
 @media screen and (max-width: 360px) {
-    body{
+    .telas_login{
         margin: 0;
         background-color: #000042;
         display: grid;
@@ -13,18 +13,18 @@
         max-height: 100vh;
     }
 
-    body div.logo{
+    .telas_login div.logo{
         grid-area: "header";
         width: 56vh;
         display: flex;
         justify-content: center;
     }
 
-    body div.logo img{
+    .telas_login div.logo img{
         width: 17vh;
     }
 
-    body div.caixaLogin{
+    .telas_login div.caixaLogin{
         grid-area: "conteudo";
         background-color: #fff;
         display: flex;
@@ -36,7 +36,7 @@
         height: 58vh;
     }
 
-    body div.caixaNova{
+    .telas_login div.caixaNova{
         grid-area: "conteudo";
         background-color: #fff;
         display: flex;
@@ -48,7 +48,7 @@
         height: 77vh;
     }
 
-    body div.caixaRecuperar{
+    .telas_login div.caixaRecuperar{
         grid-area: "conteudo";
         background-color: #fff;
         display: flex;
@@ -60,26 +60,26 @@
         height: 58vh;
     }
 
-    body div.caixaRecuperar form.recuperarPost{
+    .telas_login div.caixaRecuperar form.recuperarPost{
         font-family: system-ui;
         width: 45vh;
     }
 
-    body div.caixaRecuperar form.recuperarPost h4{
+    .telas_login div.caixaRecuperar form.recuperarPost h4{
         margin: 2vh 0;
         font-weight: 900;
         font-size: large;
     }
 
-    body div.caixaRecuperar form.recuperarPost p{
+    .telas_login div.caixaRecuperar form.recuperarPost p{
         margin: 1vh 0;
     }
 
-    body div.caixaRecuperar form.recuperarPost p#mensagemConfEmail{
+    .telas_login div.caixaRecuperar form.recuperarPost p#mensagemConfEmail{
         margin: 3vh 0;
     }
 
-    body div.caixaRecuperarVolta{
+    .telas_login div.caixaRecuperarVolta{
         grid-area: "conteudo";
         background-color: #fff;
         display: flex;
@@ -91,31 +91,31 @@
         height: 47vh;
     }
 
-    body div.caixaRecuperarVolta div.recuperarVoltaPost{
+    .telas_login div.caixaRecuperarVolta div.recuperarVoltaPost{
         font-family: system-ui;
         width: 45vh;
     }
 
-    body div.caixaRecuperarVolta div.recuperarVoltaPost h4{
+    .telas_login div.caixaRecuperarVolta div.recuperarVoltaPost h4{
         margin: 2vh 0;
         font-weight: 900;
         font-size: large;
     }
 
-    body div.caixaRecuperarVolta div.recuperarVoltaPost p{
+    .telas_login div.caixaRecuperarVolta div.recuperarVoltaPost p{
         margin: 1vh 0;
     }
 
-    body div.caixaRecuperarVolta div.recuperarVoltaPost p#mensagemConfEmail{
+    .telas_login div.caixaRecuperarVolta div.recuperarVoltaPost p#mensagemConfEmail{
         margin: 3vh 0;
     }
 
-    body div.caixaNova label{
+    .telas_login div.caixaNova label{
         font-family: system-ui;
         font-weight: 700;
     }
 
-    body div.caixaNova input{
+    .telas_login div.caixaNova input{
         width: 100%;
         padding: 2vh 3vh;
         margin: 0;
@@ -127,7 +127,7 @@
         color: #fff;
     }
 
-    body div.caixaRecuperar input{
+    .telas_login div.caixaRecuperar input{
         width: 100%;
         padding: 2vh 3vh;
         margin: 1.5vh 0;
@@ -139,7 +139,7 @@
         color: #fff;
     }
 
-    body h1 {
+    .telas_login h1 {
         margin: 1vh 0;
         font-size: 5vh;
         text-align: center;
@@ -148,14 +148,14 @@
         font-family: sans-serif;
     }
 
-    body form {
+    .telas_login form {
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
     }
 
-    body a#esqueceu{
+    .telas_login a#esqueceu{
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -165,13 +165,13 @@
         color:  #000042;
     }
 
-    body a#nova_conta{
+    .telas_login a#nova_conta{
         text-decoration: none;
         font-weight: 600;
         color:  #000042;
     }
 
-    body div.caixaLogin input{
+    .telas_login div.caixaLogin input{
         width: 100%;
         padding: 2vh 3vh;
         margin: 1.5vh 0;
@@ -190,7 +190,7 @@
         font-weight: 700;
     }
 
-    body div.caixaLogin button.btnSubmitForm{
+    .telas_login div.caixaLogin button.btnSubmitForm{
         padding: 1vh 3vh;
         margin: 1.5vh 0;
         display: inline-block;
@@ -202,7 +202,7 @@
         font-size: 3.5vh;
     }
 
-    body div.caixaNova button.btnSubmitForm, body div.caixaRecuperar button.btnSubmitForm{
+    .telas_login div.caixaNova button.btnSubmitForm, .telas_login div.caixaRecuperar button.btnSubmitForm{
         padding: 1vh 3vh;
         margin: 2.5vh 0;
         display: inline-block;
@@ -214,7 +214,7 @@
         font-size: 3.5vh;
     }
 
-    body div.caixaRecuperarVolta a#back_button{
+    .telas_login div.caixaRecuperarVolta a#back_button{
         padding: 1vh 3vh;
         margin: 5vh 0;
         display: inline-block;
@@ -229,11 +229,11 @@
         text-decoration: none;
     }
 
-    body p{
+    .telas_login p{
         margin: 1vh;
     }
 
-    body form.gmail_acesso{
+    .telas_login form.gmail_acesso{
         grid-area: "footer";
         background-color: #fff;
         display: flex;
@@ -245,7 +245,7 @@
         height: -webkit-fill-available
     }
 
-    body form.gmail_acesso a#gmail_button{
+    .telas_login form.gmail_acesso a#gmail_button{
         display: flex;
         flex-direction: row;
         align-content: center;
@@ -253,13 +253,13 @@
         text-decoration: none;
     }
 
-    body form.gmail_acesso p{
+    .telas_login form.gmail_acesso p{
         margin-top: 2vh;
         font-family: system-ui;
         font-weight: 700;
     }
 
-    body form.gmail_acesso a#gmail_button p{
+    .telas_login form.gmail_acesso a#gmail_button p{
         padding: 1vh 3vh;
         margin: 1.5vh 0;
         display: inline-block;
@@ -271,38 +271,42 @@
         font-size: 3.5vh;
     }
 
-    body form.gmail_acesso img{
+    .telas_login form.gmail_acesso img{
         width: 7.6vh;
     }
 
-    body div.menu{
+    /* INICIO SISTEMA*/
+    .sistema_logado{
+        margin: 0;
+        /*background-color: #000042;*/
         display: flex;
         flex-direction: column;
-        width: 56vh;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    body div.menu img{
-        width:4vh;
-    }
-
-    body div.menu{
-        grid-area: "header";
+    .sistema_logado div.menu{
+        background-color: #000042;
         width: 56vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: stretch;
-        margin: 1vh 0 0 0;
+        padding: 0.5vh 0.3vw;
     }
 
-    body div.menu div#sub_menu_user{
+    .sistema_logado div.menu img{
+        width:4vh;
+    }
+
+    .sistema_logado div.menu div#sub_menu_user{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0 1vh;
     }
 
-    body div.menu div#sub_menu_user h1{
+    .sistema_logado div.menu div#sub_menu_user h1{
         margin:0;
         font-size: 3vh;
         text-align: center;
@@ -311,20 +315,21 @@
         font-family: system-ui;
     }
 
-    body div.menu hr{
+    .sistema_logado div.menu hr{
         width: 55vh;
         margin: .3vh;
     }
 
-    body div.menu div#sub_menu_busca{
+    .sistema_logado div.menu div#sub_menu_busca{
         display: flex;
         justify-content: space-around;
         margin: 0 1vh .5vh 0;
         align-items: center;
     }
 
-    body div.menu div#sub_menu_busca div{
+    .sistema_logado div.menu div#sub_menu_busca #busca_form{
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         margin: 0;
         padding: 0 0.5vh;
@@ -332,7 +337,7 @@
         background-color: #fff;
     }
 
-    body div.menu div#sub_menu_busca div input{
+    .sistema_logado div.menu div#sub_menu_busca #busca_form input{
         border: none;
         background-color: #fff;
         resize: none;
@@ -343,48 +348,47 @@
         height: 3.5vh;
     }
 
-    body div.menu div#sub_menu_busca div input::-webkit-input-placeholder{
+    .sistema_logado div.menu div#sub_menu_busca #busca_form input::-webkit-input-placeholder{
         color: #000;
         opacity: .5;
         font-family: system-ui;
         font-weight: 700;
     }
 
-    body div.home_base{
-        grid-area: "conteudo";
+    .home_base{
         background-color: #e2e2e2;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: stretch;
         flex-direction: column;
         width: 56vh;
-        height: 100vh;
     }
 
-    body div.anuncio img{
-        width: 56vh;
+    .sistema_logado div.anuncio img{
+        width: 98vw;
     }
 
-    body div.entregadores, body div.empresas{
+    .sistema_logado div.entregadores, .telas_login div.empresas{
         margin: 0;
     }
 
-    body div.entregadores div.entregadores_titulo, body div.empresas div.empresas_titulo{
+    .sistema_logado div.entregadores div.entregadores_titulo, .sistema_logado div.empresas div.empresas_titulo{
         display: flex;
-        align-items: center;
         justify-content: space-between;
         width: 52vh;
+        align-items: center;
+        margin-bottom: 1vh;
     }
 
-    body div.entregadores div.entregadores_titulo h2, body div.empresas div.empresas_titulo h2{
-        margin:0;
+    .sistema_logado div.entregadores div.entregadores_titulo h2, .sistema_logado div.empresas div.empresas_titulo h2{
+        margin: 2vw 0 0 3vw;
         font-size: 4vh;
         text-align: justify;
         color: #858585;
         font-family: system-ui;
     }
 
-    body div.entregadores div.entregadores_titulo a, body div.empresas div.empresas_titulo a{
+    .sistema_logado div.entregadores div.entregadores_titulo a, .sistema_logado div.empresas div.empresas_titulo a{
         margin:0;
         font-size: 3vh;
         text-align: justify;
@@ -392,5 +396,51 @@
         font-family: system-ui;
         text-decoration: none;
     }
+
+    .anuncio{
+        display: flex;
+        background-color: darkgray;
+        margin: .5vh;
+        text-decoration: none;
+        color: black;
+    }
+
+    .img_place{
+        width: 30vw;
+        height: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_anuncio{
+        width: 20vw;
+    }
+
+    .anuncio_content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        font-family: system-ui;
+    }
+
+    .nome_anuncio{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 3.5vw;
+    }
+    .nome_anuncio h2{
+        margin: 0;
+    }
+
+    .descr_anuncio{
+
+    }
+
+    .end_anuncio{
+
+    }
+
 
 }
