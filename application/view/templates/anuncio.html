@@ -4,7 +4,79 @@ Entrega Freelancer
 {% endblock %}
 {% block content_index %}
     <div class="anuncio_proprio">
+        <div class="nome_anuncio_proprio">
+            <h2>{{ anuncio.nome }}</h2>
+        </div>
+        <div class="img_place_proprio">
+            <img class="img_anuncio_proprio" src="{{url_for('static', filename= anuncio.imagem )}}">
+        </div>
 
+        <div class="anuncio_content_proprio">
+            <div class="preco_anuncio_proprio">
+                <div class="cifrao_anuncio_proprio">R$</div>
+                <div class="valor_anuncio_proprio">{{ "%.2f"|format(anuncio.valor_diario) }}</div>
+                <div class="por_anuncio_proprio">/ dia</div>
+            </div>
+            <div class="disponibilidade_anuncio_proprio">disponível por {{ anuncio.disp_semana }} dias da semana.</div>
+
+            <div class="verificar_anuncio_proprio">
+                <a href="">verificar dias disponiveis</a>
+            </div>
+
+            <div class="descr_anuncio_proprio">
+                {{ anuncio.descr_breve }}
+            </div>
+            <div class="end_anuncio_proprio">
+                {{ anuncio.endereco }}, {{ anuncio.uf }}
+            </div>
+            <div class="descr_completa_anuncio_proprio">
+                {{ anuncio.descr_completa }}
+            </div>
+        </div>
+        <div class="botao_anuncio_proprio">
+            <a href="">
+                {% if anuncio.__class__.__name__ == "Empresa" %}
+                Candidatar agora
+                {% else %}
+                Contratar agora
+                {% endif %}
+            </a>
+        </div>
+
+        <div class="perguntas_anuncio_proprio">
+            <div class="titulo_perguntas_anuncio_proprio">
+                Pergunte ao
+                {% if anuncio.__class__.__name__ == "Empresa" %}
+                Empregador
+                {% else %}
+                Entregador
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="input_place_pergunta_anuncio_proprio">
+            <input class="input_pergunta_anuncio_proprio" type="text">
+        </div>
+
+        <div class="botao_pergunta_anuncio_proprio">
+            <a href="">
+                Perguntar
+            </a>
+        </div>
+        <div class="ultimas_perguntas_anuncio_proprio">
+            <div class="titulo_ultimas_perguntas_anuncio_proprio">
+                Últimas perguntas feitas
+            </div>
+            <div class="ultimas_perguntas_realizadas_anuncio_proprio">
+                Nunhume pergunta feita, seja o primeiro.
+                <!-- Aqui, juntamente com AJAX, deverá ser salvo em um vetor
+                todas as perguntas feitas ao user, com carregamento, e com um
+                html próprio para finalizar de meneira a se tornar mais visual.
+                Tomar como base MercadoLivre e Amazon-->
+            </div>
+
+
+        </div>
     </div>
 {% endblock %}
 {% block script %}

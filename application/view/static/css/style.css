@@ -362,6 +362,7 @@
         align-items: stretch;
         flex-direction: column;
         width: 56vh;
+        padding: 0 0 5vh;
     }
 
     .sistema_logado div.anuncio img{
@@ -399,7 +400,7 @@
 
     .anuncio{
         display: flex;
-        background-color: darkgray;
+        background-color: #cbcbcb;
         margin: .5vh;
         text-decoration: none;
         color: black;
@@ -442,5 +443,177 @@
 
     }
 
+    .footer{
+        background-color: #000042;
+        width: 100%;
+    }
 
+    .anuncie_contrate{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    .anuncie_contrate img{
+        width: 8vw;
+    }
+
+    .texto_footer p{
+        margin: 0;
+        padding: 3vw;
+        font-size: 5.5vw;
+    }
+
+    .anuncio_proprio{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        font-family: system-ui;
+    }
+
+    .nome_anuncio_proprio{
+        margin-left: 5vw;
+        /*text-shadow: .2vw .2vw 3vw black;*/
+    }
+
+    .img_place_proprio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2vw;
+    }
+
+    .img_anuncio_proprio{
+        width: 40vw;
+        box-shadow: 0px 0px 5px 3px #ccc;
+    }
+
+    .anuncio_content_proprio{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 5vw;
+    }
+
+    .preco_anuncio_proprio{
+        display: flex;
+        font-size: 7vw;
+        font-weight: 600;
+        align-items: flex-end;
+        flex-direction: row;
+        text-shadow: .2vw .2vw 1vw black;
+    }
+
+    .cifrao_anuncio_proprio{
+        margin-right: 1vw;
+    }
+
+    .valor_anuncio_proprio{
+        margin-right: 1vw;
+        font-size: 8vw;
+    }
+
+    .por_anuncio_proprio{
+        font-size: 5vw;
+    }
+
+    .disponibilidade_anuncio_proprio{
+        font-size: 4vw;
+        font-weight: 400;
+    }
+
+    .verificar_anuncio_proprio{
+        display: flex;
+        justify-content: center;
+        padding: 5vw;
+    }
+
+    .verificar_anuncio_proprio a{
+        text-decoration: none;
+        color: #000042;
+    }
+
+    .botao_anuncio_proprio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botao_anuncio_proprio a{
+        color: white;
+        text-decoration: none;
+        font-size: 5vw;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: seagreen;
+        border-radius: 3vw;
+        border: solid .2vw green;
+        margin: 5vw;
+    }
+
+    .perguntas_anuncio_proprio{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 5vw;
+    }
+
+    .input_place_pergunta_anuncio_proprio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2vh 5vw 0;
+    }
+
+    .input_pergunta_anuncio_proprio{
+        width: 100%;
+        height: 10vh;
+        border-radius: 3vw;
+    }
+
+    .botao_pergunta_anuncio_proprio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botao_pergunta_anuncio_proprio a{
+        color: white;
+        text-decoration: none;
+        font-size: 5vw;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: steelblue;
+        border-radius: 3vw;
+        border: solid .2vw darkslateblue;
+        margin: 5vw;
+    }
+
+    .ultimas_perguntas_anuncio_proprio{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        align-items: flex-start;
+    }
+
+    .titulo_ultimas_perguntas_anuncio_proprio{
+        font-size: 5vw;
+        font-weight: 700;
+        margin: 0 0 2vh;
+    }
+
+    .ultimas_perguntas_realizadas_anuncio_proprio{
+        font-size: 3.5vw;
+        text-align: center;
+        width: 100%;
+        margin: 0 0 2vh;
+    }
 }
